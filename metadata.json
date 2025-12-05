@@ -1,0 +1,5 @@
+{
+  "name": "React Tetris",
+  "description": "A modern, responsive Tetris clone built with React, TypeScript, and Tailwind CSS. Features keyboard and touch controls, scoring, and level progression.",
+  "requestFramePermissions": []
+}

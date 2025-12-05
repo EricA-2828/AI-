@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Tetris</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #111827;
+        color: white;
+        overscroll-behavior: none; /* Prevent pull-to-refresh on mobile */
+      }
+      /* Retro font for score and titles */
+      .font-pixel {
+        font-family: 'Press Start 2P', cursive;
+      }
+
+      /* Flashing animation for cleared rows */
+      @keyframes flash-white {
+        0%, 100% { background-color: white; opacity: 1; }
+        50% { background-color: rgba(255, 255, 255, 0.5); opacity: 0.8; }
+      }
+      .animate-flash {
+        animation: flash-white 0.1s linear infinite;
+        z-index: 10;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
